@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Common\" />
+    <None Remove="Common\Exceptions\" />
+    <None Remove="Common\Mappings\" />
+    <None Remove="DTOs\" />
+    <None Remove="DTOs\Email\" />
+    <None Remove="Extensions\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Clubs\" />
+    <None Remove="Features\Players\" />
+    <None Remove="Features\Stadiums\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Interfaces\Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Email\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Clubs\" />
+    <Folder Include="Features\Players\" />
+    <Folder Include="Features\Stadiums\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Repositories\" />
+  </ItemGroup>
+</Project>
